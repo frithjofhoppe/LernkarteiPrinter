@@ -87,10 +87,13 @@ public class StackView extends FXViewModel
 					String stackName = Alert.simpleString("Neuer Stapel", "Wie soll der neue Stapel heissen?");
 					if (/* this.getName() != null && */ stackName != null && !stackName.equals(""))
 					{
+						stackName = stackName.replaceAll("\\s+","");
+						System.out.println(stackName + " danach!!");
 						while (stackName.length() > Globals.maxNameLength)
 						{
 							stackName = Alert.simpleString("Name zu lang", "Bitte wählen Sie einen kürzeren Namen. (max "+Globals.maxNameLength+" Zeichen)", stackName.substring(0, Globals.maxNameLength), 300);
 						}
+						
 						getFXController().getModel("stack").doAction(Command.NEW, stackName, getData());
 						// TODO Feedback für den User (Fehlermeldungen)
 					}

@@ -17,3 +17,4 @@
 8. select the JAR file ind **dist** folder
 9. CM->Export->**JAR executabe** to a target folder
 10. delete all .css in **views** (undo step 5)
+l

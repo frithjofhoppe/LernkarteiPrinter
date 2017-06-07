@@ -275,7 +275,7 @@ public class QuizletImportView extends FXViewModel
 								if (name == null) { return; }
 
 								int possible = getFXController().getModel("stack").doAction(Command.CAN_CREATE, name);
-
+								name = name.replaceAll("\\s+", "");
 								while (name.equals("") || possible < 0)
 								{
 									if (possible < 1)

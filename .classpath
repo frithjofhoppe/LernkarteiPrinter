@@ -8,5 +8,10 @@
 	<classpathentry kind="lib" path="src/scrollyv8/jl1.0.1.jar"/>
 	<classpathentry kind="lib" path="src/database/jdbc/sqlite-jdbc-3.8.11.2.jar"/>
 	<classpathentry kind="lib" path="src/pushing/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Java/JavaLib/PDFBox/pdfbox-2.0.6.jar" sourcepath=""/>
+	<classpathentry kind="lib" path="D:/Java/JavaLib/PDFBox/pdfbox-tools-2.0.6.jar" sourcepath="/test"/>
+	<classpathentry kind="lib" path="D:/Java/JavaLib/PDFBox/preflight-2.0.6.jar" sourcepath="/printlearn"/>
+	<classpathentry kind="lib" path="D:/Java/JavaLib/PDFBox/xmpbox-2.0.6.jar" sourcepath="/printlearn"/>
+	<classpathentry kind="lib" path="D:/Java/JavaLib/PDFBox/pdfbox-app-1.8.13.jar" sourcepath="/test"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

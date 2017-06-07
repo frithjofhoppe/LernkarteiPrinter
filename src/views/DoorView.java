@@ -153,6 +153,7 @@ public class DoorView extends FXView
 		String doorName = Alert.simpleString(txtNewTheme, "Wie soll das neue Fach heissen?");
 		if (doorName != null && !doorName.equals(""))
 		{
+			doorName = doorName.replaceAll("\\s+","");
 			int maxNameLength = Globals.maxNameLength;
 			while (doorName != null && doorName.length() > maxNameLength)
 			{
